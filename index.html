@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width","initial-scale=1">
+    <link href="css/skeleton.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top_of_page">
+        <div class="sign_in">
+          <a onclick="openInNewTab('signin.html');" class="button1">SIGN IN &rarr;</a>
+        </div>
+        <div class="sign_up">
+          <a class="button1">SIGN UP &rarr;</a>
+        </div>
+      </div>
+      <div class="container">
+      <div class="row img-row">
+          <figure class="columns four item"><img src="img/waterfall.jpg">
+            <figcaption>
+              <h3 class="itemname">Apples</h3>
+              <h4 class="itemprice">KSh0.67 per Kg</h4>
+              <div class="incdec">
+                <input class="numinput" id="iteminput" type="text" />
+                <img src="img/arrows/up.ico" class="up" />
+                <img src="img/arrows/down.ico" class="down" />
+                <button class="buybutton" onclick="additemcart('apples',0.67);">Buy</button>
+              </div>
+            </figcaption>
+          </figure>
+        <figure class="columns four item"><img src="img/waterfall.jpg">
+          <figcaption>
+            <h3 class="itemname">Bananas</h3>
+            <h4 class="itemprice">KSh 1.2 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput1" />
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart1('bananas',1.2);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/waterfall.jpg">
+          <figcaption>
+            <h3 class="itemname">Apricots</h3>
+            <h4 class="itemprice">KSh 2 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput2"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart2('apricots',2);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="row img-row">
+        <figure class="columns four item"><img src="img/waterfall.jpg">
+          <figcaption>
+            <h3 class="itemname">Oranges</h3>
+            <h4 class="itemprice">KSh0.97 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput3"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart3('oranges',0.97);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/waterfall.jpg">
+          <figcaption>
+            <h3 class="itemname">PineApples</h3>
+            <h4 class="itemprice">KSh 5.1 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput4"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart4('pineapples',5.1);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/waterfall.jpg">
+          <figcaption>
+            <h3 class="itemname"> Red Grapes</h3>
+            <h4 class="itemprice">KSh 0.88 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput5"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart5('Red Grapes',0.88);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="row img-row">
+        <figure class="columns four item"><img src="img/waterfall.jpg">
+          <figcaption>
+            <h3 class="itemname">StrawBerries</h3>
+            <h4 class="itemprice">KSh 1.8 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput6"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart6('Strawberries',1.8);">Add</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/waterfall.jpg">
+          <figcaption>
+            <h3 class="itemname">Mangoes</h3>
+            <h4 class="itemprice">KSh 0.45 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput7"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart7('mangoes',0.45);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/waterfall.jpg">
+          <figcaption>
+            <h3 class="itemname">Avocado</h3>
+            <h4 class="itemprice">KSh 3.2 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput8" />
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart8('avocado',3.2);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="list">
+      <ul class="bucketlistitems">
+      </ul>
+    </div>
+  </div>
+  </body>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+</html>
