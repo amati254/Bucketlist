@@ -55,7 +55,7 @@
   margin-top: 130px;
   margin-left: 400px;
 }
-#name, #secondname, #email{
+#name, #secondname, #email, #password{
   height: 50px;
 }
 #lblname{
