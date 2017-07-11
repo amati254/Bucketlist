@@ -1,3 +1,7 @@
+img{
+  width: 200px;
+  height: 200px;
+}
 .sign_in{
   position: absolute;
   right: 200px;
@@ -70,11 +74,15 @@ hr{
     opacity: 1;
     width: auto;
     height: auto;
-    transform: translateX(0px); }
+    transform: translateX(0px);
+  }
 .indec{
   position: absolute;
   height: 10px;
   width: 50px;
+}
+.container{
+  top: 100px;
 }
 .item{
   position: relative;
