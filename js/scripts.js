@@ -1,3 +1,4 @@
+
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
   if(wScroll > $('.container').offset().top - ($(window).height() / 1.2)) {

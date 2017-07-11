@@ -1,5 +1,9 @@
-img{
-  width: 200px;
+.bucketicon{
+  width: 50px;
+  height: 50px;
+}
+.contentimages{
+  width: 250px;
   height: 200px;
 }
 .sign_in{
@@ -89,12 +93,14 @@ hr{
   overflow: hidden;
 }
 .itemname{
+  color: black;
   position: absolute;
    top:130px;
    left: -100%;
    transition: all 0.3s ease-in-out;
 }
-.itemprice{
+.itemname1{
+  color: black;
   position: absolute;
   top:180px;
   left: -100%;
@@ -107,9 +113,50 @@ hr{
 .item:hover .itemname{
   left: 0%;
 }
-.item:hover .itemprice{
+.item:hover .itemname1{
   left: 0%;
 }
 .item:hover img{
   transform: scale(1.1);
+}
+.bucket{
+  position: fixed;
+  height: 100%;
+  top: 0px;
+  right: -190px;
+  width: 150px;
+  padding: 30px;
+  background: #FF4500;
+}
+.bucket li{
+  list-style: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+.bucket li:hover{
+  color: rgba(255, 255, 255, 1);
+}
+.togglebucket{
+  position: fixed;
+  height: 100%;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  top: 40px;
+  right: 20px;
+  z-index: 1;
+}
+#buckettoggler{
+  display: none;
+}
+#buckettoggler:checked + .wrapper .togglebucket {
+  right: 190px;
+}
+#buckettoggler:checked + .wrapper .bucket  {
+  right: 0;
+  -webkit-transition: all 0.30s ease-out 0s;
+  -moz-transition: all 0.30s ease-out 0s;
+  transition: all 0.30s ease-out 0s;
+  box-shadow: 4px 0px 25px #FF4500;
 }

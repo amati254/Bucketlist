@@ -11,8 +11,11 @@
     <title>Bucketlist</title>
   </head>
   <body>
+    <input type="checkbox" id="buckettoggler" name="" value="">
     <div class="wrapper">
       <div class="top_of_page">
+
+        <label for="buckettoggler" class="togglebucket"><h4>View bucketlist</h4><img class="bucketicon" src="img/bucketlist1.png" alt=""></label>
         <div class="sign_in">
           <a onclick="openInNewTab('signin.html');" class="button1">SIGN IN &rarr;</a>
         </div>
@@ -22,99 +25,101 @@
       </div>
       <div class="container">
       <div class="row img-row">
-          <figure class="columns four item"><img src="img/waterfall.jpg">
+          <figure class="columns four item"><img class="contentimages" src="img/ballroom.jpg">
             <figcaption>
-              <h3 class="itemname">Apples</h3>
-              <h4 class="itemprice">KSh0.67 per Kg</h4>
+              <h3 class="itemname">Learn How to </h3>
+              <h4 class="itemname1">Ballroom Dance</h4>
               <div class="incdec">
-                <button class="buybutton" onclick="additemcart('apples',0.67);">Add</button>
+                <button class="buybutton" onclick="additembucket('Learn how to ballroom dance');">Add</button>
               </div>
             </figcaption>
           </figure>
-        <figure class="columns four item"><img src="img/waterfall.jpg">
+        <figure class="columns four item"><img class="contentimages" src="img/family.jpg">
           <figcaption>
-            <h3 class="itemname">Bananas</h3>
-            <h4 class="itemprice">KSh 1.2 per Kg</h4>
+            <h3 class="itemname">Start</h3>
+            <h4 class="itemname1">A Family</h4>
             <div class="incdec">
-              <button class="buybutton" onclick="additemcart1('bananas',1.2);">Add</button>
+              <button class="buybutton" onclick="additembucket('Start the family');">Add</button>
             </div>
           </figcaption>
         </figure>
-        <figure class="columns four item"><img src="img/waterfall.jpg">
+        <figure class="columns four item"><img class="contentimages" src="img/star.jpg">
           <figcaption>
-            <h3 class="itemname">Apricots</h3>
-            <h4 class="itemprice">KSh 2 per Kg</h4>
+            <h3 class="itemname">Name</h3>
+            <h4 class="itemname1">A Star</h4>
             <div class="incdec">
-              <button class="buybutton" onclick="additemcart2('apricots',2);">Add</button>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="row img-row">
-        <figure class="columns four item"><img src="img/waterfall.jpg">
-          <figcaption>
-            <h3 class="itemname">Oranges</h3>
-            <h4 class="itemprice">KSh0.97 per Kg</h4>
-            <div class="incdec">
-              <button class="buybutton" onclick="additemcart3('oranges',0.97);">Add</button>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="columns four item"><img src="img/waterfall.jpg">
-          <figcaption>
-            <h3 class="itemname">PineApples</h3>
-            <h4 class="itemprice">KSh 5.1 per Kg</h4>
-            <div class="incdec">
-              <button class="buybutton" onclick="additemcart4('pineapples',5.1);">Add</button>
-            </div>
-          </figcaption>
-        </figure>
-        <figure class="columns four item"><img src="img/waterfall.jpg">
-          <figcaption>
-            <h3 class="itemname"> Red Grapes</h3>
-            <h4 class="itemprice">KSh 0.88 per Kg</h4>
-            <div class="incdec">
-              <button class="buybutton" onclick="additemcart5('Red Grapes',0.88);">Add</button>
+              <button class="buybutton" onclick="additembucket2('Name a star');">Add</button>
             </div>
           </figcaption>
         </figure>
       </div>
       <div class="row img-row">
-        <figure class="columns four item"><img src="img/waterfall.jpg">
+        <figure class="columns four item"><img class="contentimages" src="img/kiss.jpg">
           <figcaption>
-            <h3 class="itemname">StrawBerries</h3>
-            <h4 class="itemprice">KSh 1.8 per Kg</h4>
+            <h3 class="itemname">Kiss</h3>
+            <h4 class="itemname1">A girl</h4>
             <div class="incdec">
-              <button class="buybutton" onclick="additemcart6('Strawberries',1.8);">Add</button>
+              <button class="buybutton" onclick="additembucket3('Kiss a girl');">Add</button>
             </div>
           </figcaption>
         </figure>
-        <figure class="columns four item"><img src="img/waterfall.jpg">
+        <figure class="columns four item"><img class="contentimages" src="img/sewing.jpg">
           <figcaption>
-            <h3 class="itemname">Mangoes</h3>
-            <h4 class="itemprice">KSh 0.45 per Kg</h4>
+            <h3 class="itemname">Learn</h3>
+            <h4 class="itemname1">To Sew</h4>
             <div class="incdec">
-              <button class="buybutton" onclick="additemcart7('mangoes',0.45);">Add</button>
+              <button class="buybutton" onclick="additembucket4('Learn to sew');">Add</button>
             </div>
           </figcaption>
         </figure>
-        <figure class="columns four item"><img src="img/waterfall.jpg">
+        <figure class="columns four item"><img class="contentimages" src="img/ocean.jpg">
           <figcaption>
-            <h3 class="itemname">Avocado</h3>
-            <h4 class="itemprice">KSh 3.2 per Kg</h4>
+            <h3 class="itemname">Put my Feet</h3>
+            <h4 class="itemname1">In the Ocean</h4>
             <div class="incdec">
-              <button class="buybutton" onclick="additemcart8('avocado',3.2);">Add</button>
+              <button class="buybutton" onclick="additembucket5('Put my feet in the ocean');">Add</button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="row img-row">
+        <figure class="columns four item"><img class="contentimages" src="img/class.jpg">
+          <figcaption>
+            <h3 class="itemname">Fly</h3>
+            <h4 class="itemname1">First Class</h4>
+            <div class="incdec">
+              <button class="buybutton" onclick="additembucket6('fly first class');">Add</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img class="contentimages" src="img/jump.jpg">
+          <figcaption>
+            <h3 class="itemname">Cliff</h3>
+            <h4 class="itemname1">Diving</h4>
+            <div class="incdec">
+              <button class="buybutton" onclick="additembucket('Cliff Diving');">Add</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img class="contentimages" src="img/harry.jpg">
+          <figcaption>
+            <h3 class="itemname">Go to all the</h3>
+            <h4 class="itemname1">Harry Potter Locations</h4>
+            <div class="incdec">
+              <button class="buybutton" onclick="additembucket8('Go to all Harry Potter locations');">Add</button>
             </div>
           </figcaption>
         </figure>
       </div>
     </div>
-    <div class="list">
+    <div class="bucket">
       <ul class="bucketlistitems">
+        <button class="btn-default" type="submit" name="button" onclick="openInNewTab('Additems.html');">Add Goals</button>
       </ul>
     </div>
   </div>
-  </body>
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/adding.js"></script>
+  </body>
 </html>
